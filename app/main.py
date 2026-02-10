@@ -1,9 +1,6 @@
 from dotenv import load_dotenv
-
 load_dotenv()
-
 from fastapi import FastAPI
-
 from app.api.whatsapp import router as whatsapp_router
 
 app = FastAPI(title="WhatsApp Scam Risk Bot")
